@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>senling</title>
+	<meta name="description" content="멋진 나를 표현하는 가장 특별한 방법">
+
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://l-sennn.github.io/UX-senling/">
+	<meta property="og:image" content="thumbnail.jpg">
+	<meta property="og:title" content="senling">
+	<meta property="og:description" content="멋진 나를 표현하는 가장 특별한 방법">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+
+		@font-face {font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');font-weight: normal; font-style: normal;}
+
+		html{scroll-behavior: smooth;
+			font-family:'Noto Sans KR', sans-serif;}
+
+		footer, nav, h1, h2, h3, p, body, li, ul{margin: 0}
+		header, section{margin-bottom: 100px; 
+								padding: 15px;}
+
+		nav{margin: auto;
+			position: fixed;
+			width: 100%;
+			background: white;
+			z-index: 10;}
+		.gnb{width: 1000px;
+			margin: auto;}
+		header{width: 1000px;
+				margin: auto;
+				border: 1px;
+				padding: 10px;
+				padding-top: 90px;}
+		section{margin: 50px 0;}
+
+		h1, h2, h3{font-family: 'yg-jalnan';
+				line-height: 1.3; 
+				word-spacing: -2px;}
+		h1{text-align: center;
+			font-size: 3em;
+			margin-bottom: 40px;}
+		h2{font-size: 2em;
+			color: #25b7b3;}
+		h3{font-size: 1.5em;
+			color: #3f3f3f;
+			margin-top: 30px;}
+		p{font-family:'Noto Sans KR', sans-serif; 
+			font-size: 1.2em; 
+			word-spacing: -0.5px;
+			line-height: 1.4; 
+			font-weight: 500; 
+			color: #3f3f3f;
+			margin-bottom: 5px;}
+		nav p{font-weight: 700;
+			font-size: 1em;
+			text-align: right;
+			line-height: 70px;}
+		header h2{margin-bottom: 10px;}
+		header p{font-weight: 400;
+				font-size: 1em;
+				line-height: 1.5;}
+		.recommend p{line-height: 1.7;}
+		.color-h2{margin-bottom: 30px;}
+		.color h3{font-size: 1.2em;
+					margin-top: 5px;}
+
+		a{display: block;
+			text-decoration: none;
+			color: white;}
+		nav a:hover{color: #25b7b3;}
+
+		nav a{color: #3f3f3f;}
+
+		nav ul{width: 600px;
+			height: 70px;
+			float: right;}
+		nav li{width:20%;
+			list-style-type: none;
+			height: 70px;
+			line-height: 70px;
+			float: right;}
+
+		img{display: block;
+			margin: auto;
+			width: 100%;
+			margin-bottom: 10px;}
+
+
+		.lightgray{color: gray;}
+		.gray{color: #3f3f3f;}
+		.white{color: white;}
+
+		.center{text-align: center;}
+		.strong{font-weight: 700;}
+
+		.logo{margin: auto;;
+			height: 70px; 
+			line-height: 70px; 
+			width: 100px;
+			float: left;}
+
+		.flex{display: flex;}
+		.row{width: 800px;
+			margin: auto;}
+		.row-narrow{width: 700px;
+					margin: auto;}
+
+		.col-1, .col-2{padding: 80px 40px;}
+		.col-1{width: 100%;}
+		.col-2{width: 50%;}
+		.col-3{width: 33.3%; padding: 40px 20px;}
+		.col-4{width: 25%;}
+		.col-5{width: 75%;}
+		.color .col-3{width: 80%;
+				padding: 0px 10px;
+				margin: auto;}
+		header .col-2{padding: 15px;}
+		.color{margin: auto;
+				margin-top: 20px;
+				width: 500px;}
+
+
+		.button{float: left; 
+				width: 40%; 
+				border-radius: 70px; 
+				border: 1px solid #3f3f3f; 
+				text-align: center; 
+				padding: 10px; 
+				margin: 1%;
+				cursor: pointer;
+				color: #3f3f3f;
+				transition-duration: 0.4s;}
+		.button-buy{background: #EEE;
+					border: 1px solid #3f3f3f;}
+		.button:hover{background:#ace8e9;
+					border: 1px solid #ace8e9; 
+					color: white;
+					cursor: pointer;}
+
+		select{margin-bottom: 5px;}
+
+		.option{font-family:'Noto Sans KR', sans-serif; 
+			font-size: 1em; 
+			word-spacing: -0.5px;
+			color: #3f3f3f;
+			margin-bottom: 10px}
+
+		.nav_hr{border: 1px solid #c8c8c8;
+				width: 99.5%;
+				margin:auto;
+				margin-top: 20px;}
+		.hr{width: 970px;
+			margin-top: 0px;
+			margin-bottom: 35px;}
+		.hr-deliv{width: 970px;
+				margin-top: 100px;
+				margin-bottom: 30px;}
+
+		.header-hr{border: 0.5px solid #EEE;
+					margin: 30px 0;}
+
+		.mint{background: #ace8e9;}
+		.beige{background: #f9f4f2;}
+		.EEE{background: #EEE;
+			padding: 85px 0}
+
+		.title{width: 350px;
+			margin: auto;
+			margin-bottom: 30px}
+
+		.tag{width: 300px;
+			margin: auto;
+			margin-top: 60px;
+			margin-bottom: 30px}
+
+		.container {position: relative;
+  					text-align: center;
+ 					color: white;}
+ 		.recommend {position: absolute;
+ 					top: 80px;
+  					left: 50%;
+  					transform: translate(-50%, 0%);}
+
+  		.no-margin{margin: 0;
+					padding: 0;}
+
+		.flex-container{flex-direction: column;}
+
+		.background{background: url('bg1.jpg'); 
+					background-size:100% auto; 
+					background-position: 0px,-100px; 
+					background-repeat: no-repeat; 
+					min-height: 700px; 
+					padding-top: 200px; 
+					background-attachment: fixed;}
+		.text-bg{margin: auto;}
+		.section-bg{padding: 0;}
+
+		.section-p1{padding-top: 80px;}
+		.point{margin-bottom: 50px;}
+		.point-h2{margin-bottom: 30px;}
+
+		.contents-img{margin-bottom: 40px;}
+		.contents-h2{margin-bottom: 10px;}
+		.contents-p{margin-bottom: 70px;}
+
+		.colorimg{width: 100%;}
+
+		.section-deliv .row{width: 900px;}
+		.delivery-p{font-size: 0.8em;
+					line-height: 1.5em;
+					word-spacing: -0.7px;}
+		.section-deliv .col-2{margin: 0;
+						padding: 30px;}
+
+		footer{background: #3f3f3f;
+				height: 350px;
+				padding: 50px;
+				margin: auto;}
+		footer .row{width: 1000px;}
+		footer h2{margin-bottom: 100px;}
+		footer p{font-size: 0.8em;}
+							
+	</style>
+</head>
+
+
+<body>
+	<nav>
+		<div class="gnb">
+			<h3 class="logo"><a href="#main">senling</a></h3>
+			<ul>
+				<li><a href="#delivery" class="nav1"><p>구매 안내</p></a></li>
+				<li><a href="#content" class="nav2"><p>상품 구성</p></a></li>
+				<li><a href="#product" class="nav3"><p>상세 정보</p></a></li>
+			</ul>
+		</div>
+		<hr class="nav_hr">
+	</nav>
+		
+	<header class="flex" id="main">
+		<div class="col-2">
+			<img src="main.jpg">
+		</div>
+		<div class="col-2">
+			<br><h2 class="gray">센링 실링왁스 패키지</h2>
+			<p>특별한 방법으로 나를 표현하고 싶은 당신을 위한<br>세상에 단 하나뿐인 실링왁스 패키지입니다.</p>
+			<hr class="header-hr">
+			<p class="lightgray">판매가: <u>21,900원</u></b><br>배송비: 2,500원 (70,000원 이상 구매 시 무료)</p>
+			<hr class="header-hr">
+
+			<label for="d" class="option">Color 1&nbsp;&nbsp;</label>
+			<select name="color" id="colors">
+   			 	<optgroup label="색상을 선택하세요.">
+   			   		<option value="옵션">&nbsp;- [필수] 옵션을 선택해 주세요 -&nbsp;&nbsp;</option>
+   			   		<option value="레드">&nbsp;레드</option>
+   			   		<option value="핑크">&nbsp;핑크</option>
+   			   		<option value="골드">&nbsp;골드</option>
+   			   		<option value="올리브">&nbsp;올리브</option>
+   			   		<option value="퍼플">&nbsp;퍼플</option>
+   			   		<option value="라이트그린펄">&nbsp;라이트그린펄</option>
+   			   		<option value="화이트">&nbsp;화이트</option>
+   			   		<option value="블루">&nbsp;블루</option>
+   			   		<option value="스카이펄">&nbsp;스카이펄</option>
+  			  	</optgroup>
+			 </select>
+			 <br>
+
+			<label for="d" class="option">Color 2&nbsp;&nbsp;</label>
+			<select name="color" id="colors">
+   			 	<optgroup label="색상을 선택하세요.">
+   			 		<option value="옵션">&nbsp;- [필수] 옵션을 선택해 주세요 -&nbsp;&nbsp;</option>
+   			   		<option value="레드">&nbsp;레드</option>
+   			   		<option value="핑크">&nbsp;핑크</option>
+   			   		<option value="골드">&nbsp;골드</option>
+   			   		<option value="올리브">&nbsp;올리브</option>
+   			   		<option value="퍼플">&nbsp;퍼플</option>
+   			   		<option value="라이트그린펄">&nbsp;라이트그린펄</option>
+   			   		<option value="화이트">&nbsp;화이트</option>
+   			   		<option value="블루">&nbsp;블루</option>
+   			   		<option value="스카이펄">&nbsp;스카이펄</option>
+  			  	</optgroup>
+			 </select>
+			 <br>
+
+			<label for="d" class="option">Color 3&nbsp;&nbsp;</label>
+			<select name="color" id="colors">
+   			 	<optgroup label="색상을 선택하세요.">
+   			   		<option value="옵션">&nbsp;- [필수] 옵션을 선택해 주세요 -&nbsp;&nbsp;</option>
+   			   		<option value="레드">&nbsp;레드</option>
+   			   		<option value="핑크">&nbsp;핑크</option>
+   			   		<option value="골드">&nbsp;골드</option>
+   			   		<option value="올리브">&nbsp;올리브</option>
+   			   		<option value="퍼플">&nbsp;퍼플</option>
+   			   		<option value="라이트그린펄">&nbsp;라이트그린펄</option>
+   			   		<option value="화이트">&nbsp;화이트</option>
+   			   		<option value="블루">&nbsp;블루</option>
+   			   		<option value="스카이펄">&nbsp;스카이펄</option>
+  			  	</optgroup>
+			 </select>
+  			<br><br>
+			
+			<div class="button button-buy"><b>바로 구매하기</b></div>
+			<div class="button"><b>장바구니 담기</b></div>
+		</div>
+	</header>
+		<hr class="hr">
+
+
+
+	<section class="no-margin" id="product">
+		<div class="row flex mint">
+			<div class="col-1">
+				<div class="title"><img src="title.png"></div>
+				<br>
+				<img src="full2.jpg">
+				<div class="tag"><img src="tag.png"></div>
+				<p class="strong center white">남들과 똑같은 이름표에 질려버린<br>당신이 찾던 바로 그 실링왁스, 센링입니다.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="no-margin">
+		<div class="row flex">
+			<div class="container">
+				<img src="full3.jpg">
+				<div class="recommend">
+					<h2><u>RECOMMEND</u></h2>
+					<br>
+					<h2 class="gray">이런 분들께 추천드려요.</h2>
+					<br><br><br>
+					<p>✔ 나를 뽐내고 싶은 당신<br>✔ 남들과 다르고 싶은 당신<br>✔ 힙한 감성을 지닌 당신<br>✔ 클래식한 감성을 지닌 당신<br>✔ 지금 이 글을 읽고 있는 당신</p>
+				</div>	
+			</div>
+	</section>
+
+	<section>
+		<div class="row-narrow">
+			<h2 class="center">여기에도, 저기에도, 거기에도,<br>나의 모든 아이템을 멋드러지게.</h2>
+			<div class="flex">
+				<div class="col-3">
+					<img src="mac.png">
+					<h3 class="center">나만의 노트북</h3>
+					<p class="center lightgray">@say_sennnnn</p>
+				</div>
+				<div class="col-3">
+					<img src="phone.png">
+					<h3 class="center">나만의 폰케이스</h3>
+					<p class="center lightgray">@snad_vd</p>
+				</div>
+				<div class="col-3">
+					<img src="locker.png">
+					<h3 class="center">나만의 사물함</h3>
+					<p class="center lightgray">@inacoms</p>
+				</div>	
+			</div>
+		</div>
+	</section>
+
+	<section class="section-bg">
+		<div class="background">
+			<div class="text-bg">
+				<h2 class="white center">언제 어디서나 센링으로<br>특별함을 더해보세요.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-p1">
+		<div class="row">
+			<div class="point"><img src="color5.jpg"></div>
+			<div class="flex">
+				<div class="col-4">
+					<h2>Point 01:</h2>
+				</div>
+				<div class="col-5">
+					<h2 class="contents-h2 gray">개성을 드러낼 수 있는<br>다양한 색감</h2>
+					<p>사람마다 좋아하는 색은 다르고 본인을 나타낼 수 있는 색도 다릅니다.<br>나를 잘 나타내줄 최적의 색을 센링과 함께 골라보세요.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section-p2">
+		<div class="row">
+			<div class="point"><img src="stamp.jpg"></div>
+			<div class="flex">
+				<div class="col-4">
+					<h2>Point 02:</h2>
+				</div>
+				<div class="col-5">
+					<h2 class="contents-h2 gray">세상에 단 하나뿐인<br>나만의 인장</h2>
+					<p>센링은 자체 제작 시스템을 통해 하나뿐인 당신만의 인장을 제작해드립니다.<br>시안은 주문완료 후 메일로 보내주시길 바라며, 친절한 상담을 약속드립니다.</p>
+					<p class="lightgray">E-mail: sen-ling@senling.kr</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="EEE">
+		<div class="row">
+			<img src="concept1.jpg"><br>
+			<img src="concept2.jpg"><br>
+			<img src="concept3.jpg">
+		</div>
+	</section>
+
+
+	<section id="content">
+		<div class="row flex beige">
+			<div class="col-1">
+				<div class="contents-img"><img src="full.jpg"></div>
+				<h2 class="gray center contents-h2">준비물은 저희가 챙길게요.</h2>
+				<p class="center contents-p">인장 1개, 왁스3개, 스푼 1개, 양초 2개로 구성된 세트 상품입니다.</p>
+				<div class="contents-img"><img src="howto.gif"></div>
+				<h2 class="gray center contents-h2">여러분은 녹이고 붓고 찍기만 하세요.</h2>
+				<p class="center">화기를 사용하는 제품이오니 어린 아이는<br>보호자의 동반 하에 사용하시길 바랍니다.</p>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="row-narrow">
+			<h2 class="center gray color-h2">COLORS</h2>
+			<div class="flex color">
+				<div class="col-3 colorimg">
+					<img src="red.jpg">
+					<h3 class="center">레드</h3>
+				</div>
+				<div class="col-3 colorimg">
+					<img src="pink.jpg">
+					<h3 class="center">핑크</h3>
+				</div>
+				<div class="col-3 colorimg">
+					<img src="gold.jpg">
+					<h3 class="center">골드</h3>
+				</div>
+			</div>
+			<div class="flex color">
+				<div class="col-3 colorimg">
+					<img src="olive.jpg">
+					<h3 class="center">올리브</h3>
+				</div>
+				<div class="col-3 colorimg">
+					<img src="purple.jpg">
+					<h3 class="center">퍼플</h3>
+				</div>
+				<div class="col-3 colorimg">
+					<img src="green.jpg">
+					<h3 class="center">라이트그린펄</h3>
+				</div>
+			</div>
+			<div class="flex color">
+				<div class="col-3 colorimg">
+					<img src="white.jpg">
+					<h3 class="center">화이트</h3>
+				</div>
+				<div class="col-3 colorimg">
+					<img src="blue.jpg">
+					<h3 class="center">블루</h3>
+				</div>
+				<div class="col-3 colorimg">
+					<img src="sky.jpg">
+					<h3 class="center">스카이펄</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr class="hr-deliv">
+
+	<section class="section-deliv" id="delivery">
+		<div class="row">
+			<div class="flex">
+				<div class="col-2">
+					<ul>
+					<p><b>상품 필수 정보</b></p>
+					<p class="lightgray delivery-p">전자상거래 등에서의 상품정보 제공 고시에 따라 작성되었습니다.</p></li>
+					<li><p class="delivery-p">품명 및 모델명: 센링 실링 스탬프</p></li>
+					<li><p class="delivery-p">법의 의한 인증, 허가 확인사항: 해당없음</p></li>
+					<li><p class="delivery-p">제조국 또는 원산지: 중국</p></li>
+					<li><p class="delivery-p">제조자: 중국OEM</p></li>
+					<li><p class="delivery-p">재질: 왁스, 나무 등</p></li>
+					<li><p class="delivery-p">사이즈: 상자 사이즈 W20xD15xH4.6(cm)</p></li>
+					<li><p class="delivery-p">A/S 책임자/전화번호: 고객행복센터 1234-5678</p></li><br>
+					<p><b>배송 안내</b></p>
+					<li><p class="delivery-p">오전 10시 이전까지 주문시 당일출고 되며 평균 배송일은 1~3일 이며, 상품의 종류 또는 재고유무에 따라 배송이 지연될 수 있습니다.<br>(단, 주말 및 법정공휴일은 배송기간에서 제외)</p></li>
+					<li><p class="delivery-p">입고 지연 혹은 품절일 경우 주문 당일날 문자로 안내 해드립니다.</p></li>
+					<li><p class="delivery-p">7만원 이상 구매 시 무료 배송되며, 7만원 미만의 경우 배송비 2,500원이 부과됩니다. 제주도 및 도서/산간 일부 지역은 추가 배송요금이 발생할 수 있습니다.</p></li>
+					</ul>
+				</div>				
+				<div class="col-2">
+					<ul>
+					<p><b>교환 및 반품 안내</b></p>
+					<li><p class="delivery-p">교환 및 반품은 제품 수령 후 7일 이내 가능합니다.</p></li>
+					<li><p class="delivery-p">제품이 불량일 경우에는 당사에서 배송료를 전액 부담하지만, 단순 변심으로 반품시에는 고객님께서 택배비를 부담해주셔야 합니다.</p></li>
+					<li><p class="delivery-p">제품 하자 및 오배송으로 인한 교환/반품 시 수령지 기준으로 판매자가 배송비 전액을 부담합니다.</p></li>
+					<li><p class="delivery-p">훼손/사용 시 교환 및 반품이 불가합니다.</p></li>
+					<li><p class="delivery-p">교환은 동일 상품으로 변경만 가능하며 타상품으로는 처리가 불가하오니 이 점 양해 부탁드리며, 교환 및 반품 물품을 보내시기 전에 꼭 고객센터로 먼저 연락 부탁드립니다.</p></li>
+					<li><p class="delivery-p">배송비는 따로 계좌로 입금하시거나 택배에 함께 동봉해서 보내주세요. 입금시 성함+전화번호 뒷자리를 함께 기재해주시면 빠른 처리가 가능합니다.</p></li>
+					<li><p class="delivery-p">반품시에는 편도 택배비 2,500원이 일반적이지만, 무료배송으로 배송을 받으신 후 반품하시면 최초 배송비 2,500원을 지불하셔야 하므로 총 5,000원의 택배비를 동봉 혹은 계좌이체 해주셔야 합니다.</p></li><br>
+
+					<p class="delivery-p"><b>CJ대한통운: 1588-1255<br>교환 및 반품 주소: 서울특별시 노원구 공릉동<br>센링 고객센터: 02-1234-5678</b></p>	
+
+					</ul>
+				</div>	
+	</section>
+
+	<footer>
+		<h2 class="white center"><a href="#main"><u>TOP</u></a></h2>
+		<div class="row flex">
+			<div class="col-4">
+				<h2 class="lightgray">senling</h2>
+			</div>
+			<div class="col-4">
+				<p class="lightgray"><b><u>senling</u></b></p><br>
+				<p class="lightgray">서울특별시 노원구 공릉동</p>
+				<p class="lightgray">sen-ling@senling.kr</p>
+				<p class="lightgray">FAX 070-1234-5678</p>
+			</div>
+			<div class="col-4">
+				<p class="lightgray"><b><u>고객 지원</u></b></p><br>
+				<p class="lightgray"><b>OPEN</b> AM 09:00 ~ PM 17:00</p>
+				<p class="lightgray">TEL 02-1234-5678</p>
+				<p class="lightgray">SAT.SUN.HOLIDAY OFF</p>
+			</div>
+			<div class="col-4">
+				<p class="lightgray"><b><u>사업 문의</u></b></p><br>
+				<p class="lightgray">제품사입/입점: sen-sales@senling.kr</p>
+				<p class="lightgray">마케팅 제휴: sen-marketing@senling.kr</p>
+				<p class="lightgray">해외 수출: sen-global@senling.kr</p>
+			</div>
+
+		</div>
+	</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
